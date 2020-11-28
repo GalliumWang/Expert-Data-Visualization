@@ -4,7 +4,7 @@ function show() {
 
     // Generic setup
     var margin = {top: 20, bottom: 20, right: 20, left: 20},
-        width = 1100 - margin.left - margin.right,
+        width = 1400 - margin.left - margin.right,
         height = 750 - margin.top - margin.bottom;
 
     var CHAR_SIZE = 25;
@@ -39,13 +39,15 @@ function show() {
         var logoAndText = svg.append("g")
             .attr("class", "title")
         logoAndText.node().appendChild(xml.documentElement);
-        logoAndText.select("svg g").attr("transform", "translate(-55 -140) scale(0.4)")
+        logoAndText.select("svg g")//.attr("transform", "translate(-5 0) scale(0.04)")
 
         // also append some text
         logoAndText.append("text").text("Characters & Locations")
             .attr("text-anchor", "middle")
             .attr("transform", "translate(" + (width/2) + ", 50)")
     });
+
+
 
     var ForceConfig = function() {
         this.collideCharacters = 50;
