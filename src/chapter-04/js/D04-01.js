@@ -42,7 +42,7 @@ function show() {
         logoAndText.select("svg g")//.attr("transform", "translate(-5 0) scale(0.04)")
 
         // also append some text
-        logoAndText.append("text").text("Characters & Locations")
+        logoAndText.append("text").text("movie&person network")
             .attr("text-anchor", "middle")
             .attr("transform", "translate(" + (width/2) + ", 50)")
     });
@@ -68,6 +68,10 @@ function show() {
         }
     };
     var config = new ForceConfig();
+
+
+
+
 
     d3.json("./data/graph.json", function(error, graph) {
 

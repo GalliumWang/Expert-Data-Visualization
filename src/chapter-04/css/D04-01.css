@@ -25,7 +25,7 @@ circle.location {
 }
 
 body {
-    background-color: #ffd90f;
+    background-color: #9e79bd;
 }
 
 @font-face {
@@ -34,6 +34,8 @@ body {
     url('../data/fonts/simpsons.woff') format('woff'),
     url('../data/fonts/simpsons.ttf')  format('truetype');
 }
+
+
 
 g.output-text text {
     font-size: 40px;
